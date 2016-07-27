@@ -4,6 +4,8 @@
 #include MBEDTLS_CONFIG_FILE
 
 #include <linux/kernel.h>
+#include <linux/string.h>
+
 #include <linux/vmalloc.h>
 
 extern void *calloc(size_t n, size_t size);

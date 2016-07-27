@@ -1,5 +1,5 @@
 [submodule "mbedtls"]
-	path = mbedtls
+	path = mbedtls/mbedtls
 	url = https://github.com/ARMmbed/mbedtls
 	branch = mbedtls-2.3
 	ignore = dirty
