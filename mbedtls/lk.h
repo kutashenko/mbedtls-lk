@@ -1,6 +1,10 @@
 #ifndef __MBEDTLS_LK_H__
 #define __MBEDTLS_LK_H__
 
+#ifndef CHAR_BIT
+#define CHAR_BIT 8 /* Normally in <limits.h> */
+#endif
+
 #include MBEDTLS_CONFIG_FILE
 
 #include <linux/kernel.h>
