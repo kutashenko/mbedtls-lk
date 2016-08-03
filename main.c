@@ -1,7 +1,7 @@
 #include <linux/kernel.h>
 #include <linux/module.h>
 
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPLv2");
 
 extern int mbedtls_selftest_main(int argc, char *argv[]);
 
