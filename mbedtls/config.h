@@ -2529,7 +2529,7 @@
 //#define MBEDTLS_PLATFORM_FREE_MACRO            free /**< Default free macro to use, can be undefined */
 //#define MBEDTLS_PLATFORM_EXIT_MACRO            exit /**< Default exit macro to use, can be undefined */
 //#define MBEDTLS_PLATFORM_TIME_MACRO            time /**< Default time macro to use, can be undefined */
-#define MBEDTLS_PLATFORM_TIME_TYPE_MACRO       time_t /**< Default time macro to use, can be undefined */
+//#define MBEDTLS_PLATFORM_TIME_TYPE_MACRO       time_t /**< Default time macro to use, can be undefined */
 #define MBEDTLS_PLATFORM_FPRINTF_MACRO      ((void)0) /**< Default fprintf macro to use, can be undefined */
 #define MBEDTLS_PLATFORM_PRINTF_MACRO        printk /**< Default printf macro to use, can be undefined */
 /* Note: your snprintf must correclty zero-terminate the buffer! */
@@ -2586,5 +2586,9 @@
 
 /* https://github.com/ARMmbed/mbedtls/issues/137#issuecomment-124117580 */
 #define MBEDTLS_HAVE_INT32
+
+#define MBEDTLS_PLATFORM_ZEROIZE_ALT
+
+#define MBEDTLS_NO_UDBL_DIVISION
 
 #endif /* MBEDTLS_CONFIG_H */

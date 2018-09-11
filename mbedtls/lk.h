@@ -10,6 +10,9 @@
 #include <linux/kernel.h>
 #include <linux/string.h>
 
+#undef SIZE_MAX
+#define SIZE_MAX (0xFFUL)
+
 #include <linux/vmalloc.h>
 
 extern void *calloc(size_t n, size_t size);
